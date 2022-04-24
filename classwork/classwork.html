@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <title>Classwork 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=2.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 30px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            My Sample Art Store
+        </h1>
+        <a href="#Home">Home</a> | <a href="#">Artists</a> | <a href="#last">Artworks</a> | <a href="#">About Us</a> | <a href="#">Search</a>
+    </header>
+    <h2>Mademoiselle Caroline Rivie&#768;re</h2>
+    <br>
+    <p>
+        by <a href="#">Jean-Auguste-Dominique Ingres</a>
+    </p>
+    <figure>
+        <a href="images/jean.jpg"> <img src="images/jean.jpg" alt="Mademoiselle Caroline Rivie&#768;re" title="Mademoiselle Caroline Rivie&#768;re" width="300" height="500" style="border:1px solid #000000;"></a>
+    </figure>
+    <article>
+        <p>
+            The portra of Mademoiselle Caroline Rivie&#768;re was painted in <time>1806</time>by the french Neoclasiccal artist Jean Auguste Diminique Ingres, and today hangs in the Louvre. It is the third of three portraits of the Rivie&#768;re family the artist painted that year.
+        </p>
+    </article>
+    <section>
+        Date: 1806 <br>
+        Medium: Oil on Canvas <br>
+        Dimensions: 100 x 70 cm <br>
+        Home: Muse&#768e du Louvre Paris;  
+        <br>
+        <br>
+
+    </section>
+    <div>
+        <p id="home"><a href="#"><img src="images/PinClipart.com_blt-clipart_2446803.png" alt="Add to Basket" width="100" height="50"></a><a href="#"><img src="images/clipart4265740.png" alt="Add to Favorites" title="Add to Favorites" width="100" height="50"></a></p>
+    </div>
+    <br>
+    <br>
+    <p>
+        Share:
+        <img src="images/facebook_16.png">
+        <img src="images/email_16.png">
+        <img src="images/twitter_16.png">
+        <img src="images/sharethis_16.png">
+    </p>
+    <br>
+    <br>
+
+    <section>
+        <h3>Related Paintings</h3>
+        
+        <a href="images/06020.jpg"><img src="images/06020.jpg" alt="Related Painting" title="related painting"></a>
+        <a href="images/07020.jpg"><img src="images/07020.jpg" alt="Related Painting" title="Related PAinting"></a>
+        <a href="images/13030.jpg"><img src="images/13030.jpg" alt="Related Painting" title="Related PAinting"></a>
+        <a href="images/05030.jpg"><img src="images/05030.jpg" alt="Related Painting" title="Related PAinting"></a>
+        
+    </section>
+    <br>
+    <br>
+
+    <div>
+        <h3>Reviews</h3>
+        <br>
+        <br>
+        <p><strong>Love this painting</strong> <br> John Smith                     
+    
+    <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+    </div>
+      <br>
+      <br>
+      <p><small>Lorena ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus sit amet ipsum cursus placerat nec vel enim. Aliquam justo tortor, euismod quis facilisis ullamcorper, consequent sed eros</small></p>
+      <hr>
+      <br>
+      <p><strong>It's okay</strong> <br> Jane Doe
+    <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+    </div>
+      <br>
+      <br>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, ipsam aut accusantium cum suscipit tempore nam labore facere quas expedita, minus voluptatibus quae dolores cumque ad fugit ex. Totam, cupiditate!</p>
+      <hr>
+      <br>
+      </p>
+    </div>
+    <p id="#last"><a href="#">Home</a> | <a href="#">Art Works</a> | <a href="#">Artists</a> | <a href="#">About Us</a>
+    </p>
+    <br>
+    <p><center><em>Copyright &copy; <time>2013</time> My Sample Art Store</em></center></p>
+</body>
